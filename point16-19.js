@@ -1,7 +1,7 @@
 const express = require('express');
 const point16_19 = express();
 
-point16_19.get("/", (req, res) => {
+point16_19.get("/login", (req, res) => {
     res.send("Berhasil Terhubung ke Server!!")
 })
 
