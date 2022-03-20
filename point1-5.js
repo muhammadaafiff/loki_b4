@@ -1,7 +1,10 @@
 const express = require('express');
 const point1_5 = express();
+const port = 3000
 
-point1_5.listen(3000)
+point1_5.listen (port, function(){
+    console.log("point1-5")
+})
 
 point1_5.get("/login", (req, res) => {
     res.send("Yeay Anda Berhasil Terhubung ke Server!!")
