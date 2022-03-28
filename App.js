@@ -122,7 +122,7 @@ pweb.delete('/hapus/pertemuan', (req, res) => {
 })
 
 //materi 21
-pweb.get('/pencarian/RPS', (req, res) => {
+pweb.post('/pencarian/RPS', (req, res) => {
     res.send('Masukkan nama matakuliah atau kode matakuliah yg ingin dicari')
 })
 
