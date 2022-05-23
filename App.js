@@ -80,35 +80,38 @@ pweb.get('/menambah/komponen', (req, res) => {
 //materi 16
 pweb.put("/mod_eval", function(req, res) {
     //res.send("Ubah komponen penilaian")
-    let modEval = {
-        nip: 198201182008121002,
-        nama_dosen: "Husnil Kamil M.T",
+    let pesan = {
+        message: "",
         mata_kuliah: "Pemograman Web",
         kode: "JSI62125",
-        sks: 3,
-        semester: 4,
         komponen_penilaian: ["Project", "Tugas", "Quiz", "UTS", "UAS"],
         persentase_penilaian: [50, 10, 5, 10, 15],
-        status: 1
     };
-    res.json(modEval);
+    res.json(pesan);
     console.log("Komponen penilaian berhasil diubah");
 })
 
 //materi 17
 pweb.delete("/del_eval", function(req, res) {
-    res.send("Hapus komponen penilaian")
+    let pesan = {
+        message: "Hapus komponen Penilaian",
+        mata_kuliah: "Pemograman Web",
+        kode: "JSI62125",
+        komponen_penilaian: ["Project", "Tugas", "UTS", "UAS"],
+        persentase_penilaian: [50, 15, 10, 15],
+    };
+    res.json(pesan);
+    console.log("Komponen penilaian berhasil dihapus")
 })
 
 //materi 18
 pweb.post("/add_rps", function(req, res) {
-    //res.send("Tambah pertemuan mingguan RPS")
-    let matkul1 = {
-        id_matkul: "JSI62125",
+    let pesan = {
+        message: "Tambah pertemuan mingguan RPS",
         nama_matkul: "Pemrograman Web",
-        SKS: 3
+        kode: "JSI62125",
     }
-    res.json(matkul1)
+    res.json(pesan)
 })
 
 //materi 19
