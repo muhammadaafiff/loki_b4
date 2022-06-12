@@ -16,3 +16,10 @@
     -ms-transform: translateY(-50%, -50%);
     transform: translateY(-50%, -50%);
   }
+  .container{
+    left: 50%;
+    top:50%;
+    margin-left: -25%;
+    position :absolute;
+    margin-top:-25%;
+  }
