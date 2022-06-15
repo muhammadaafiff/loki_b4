@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,86 +30,55 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-       <!-- Sidebar -->
-       <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-        <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center my-3" href="dashborddosen.html">
-            <div class="sidebar-brand-img">
-                <p>
-                    <img src="unand.png" width="60" lenght ="50"/>
-                  </p>
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center my-3" href="dashborddosen.html">
+                <div class="sidebar-brand-img">
+                    <p>
+                        <img src="unand.png" width="60" lenght ="50"/>
+                      </p>
+                    
+                </div>
+                <div class="sidebar-brand-text mx-1">UNIVERSITAS ANDALAS</div>
                 
+            </a>
+                <div class="sidebar-brand text-center">
+                    <u>DOSEN</u><br/>
+                </div>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="dashborddosen.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item ">
+                <a class="nav-link" href="akundosen.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Akun</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-            <div class="sidebar-brand-text mx-1">UNIVERSITAS ANDALAS</div>
-            
-        </a>
-        <div class="sidebar-brand text-center">
-            <p>Dosen</p><br/>
-        </div>
-        <!-- Divider -->
-        <hr class="sidebar-divider my-0">
 
-        <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
-            <a class="nav-link" href="dashborddosen.html">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>RPS</span></a>
-        </li>
-
-        <!-- Nav Item - Tables -->
-        <li class="nav-item ">
-            <a class="nav-link" href="akundosen.html">
-                <i class="fas fa-fw fa-user"></i>
-                <span>Akun</span></a>
-        </li>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block">
-
-        <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
-
-        <!-- Nav Item - logout -->
-        <li class="nav-item my-5">
-            <a class="nav-link" href="logout.html">
-                <i class="fas fa-fw fa-sign-out-alt"></i>
-                <span>Logout</span></a>
-        </li>
-    </ul>
-
-    <!-- End of Sidebar -->
+        </ul>
+        <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Mata Kuliah yang diampu</h6>
-                </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>Mata Kuliah</th>
-                                    <th>Kode </th>
-                                    <th>RPS</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Pemrograman Web</td>
-                                    <td>JSI 616</td>
-                                    <td><button type="button" class="btn btn-link">RPS</button></td>
-                                </tr>
-                                <tr>
-                                    <td>Pemrograman Basis Data</td>
-                                    <td>JSI 323</td>
-                                    <td><button type="button" class="btn btn-link">RPS</button></td>
-                                </tr>
-                </div>
+
             <!-- Main Content -->
             <div id="content">
 
@@ -124,17 +94,18 @@
 
                     <!-- Topbar Search -->
                     <form
-                    class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                            aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -195,7 +166,9 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+                    <container class="container-fluid">
+                        <h1>RPS</h1>
+                    </container>
 
         </div>
         <!-- End of Content Wrapper -->
