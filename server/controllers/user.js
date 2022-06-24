@@ -1,6 +1,6 @@
-import User from "../models/User.js";
- 
-export const getUsers = async (req, res) => {
+import User from '../models/User.js';
+
+export const getUser = async (req, res) => {
     try {
         const user = await User.findAll();
         res.send(user);
@@ -8,4 +8,3 @@ export const getUsers = async (req, res) => {
         console.log(err);
     }
 }
- 
