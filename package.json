@@ -5,6 +5,7 @@
   "authors": "kel4",
   "version": "1.0.0",
   "main": "pathToMain",
+  "type": "module",
   "scripts": {
     "test": "echo "
   },

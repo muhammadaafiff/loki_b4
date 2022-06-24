@@ -3,9 +3,9 @@ import express from "express";
 // Import cors
 import cors from "cors";
 // Import connection
-import db from "./config/database.js";
+import db from "./server/config/database.js";
 // Import router
-import Router from "./routes/routes.js";
+import Router from "./server/routes/routes.js";
  
 // Init express
 const app = express();
