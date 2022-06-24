@@ -1,10 +1,10 @@
 // Import model user
-import User from "../models/User.js.js.js.js";
+import User from "../models/User.js";
  
 // Get semua user
 export const getUsers = async (req, res) => {
     try {
-        const User = await User.findAll();
+        const user = await User.findAll();
         res.send(user);
     } catch (err) {
         console.log(err);
@@ -14,12 +14,12 @@ export const getUsers = async (req, res) => {
 // Get user berdasarkan id
 export const getUserById = async (req, res) => {
     try {
-        const User = await User.findAll({
+        const user = await User.findAll({
             where: {
                 id: req.params.id
             }
         });
-        res.send(User[0]);
+        res.send(user[0]);
     } catch (err) {
         console.log(err);
     }
