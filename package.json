@@ -1,15 +1,21 @@
+
 {
-  "name": "express_js",
+  "name": "pweb",
+  "description": "Repository Kelompok 4 PWEB B",
+  "authors": "kel4",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "pathToMain",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo "
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
   }
 }
+
