@@ -7,7 +7,7 @@ const { DataTypes } = Sequelize;
 const User = db.define(
   "users",
   {
-    username: {
+    id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true,
@@ -25,7 +25,24 @@ const User = db.define(
     password: {
       type: DataTypes.STRING,
     },
+    remember_token: {
+      type: DataTypes.STRING,
+    },
+    type: {
+      type: DataTypes.STRING,
+    },
+    created_at: {
+      type: DataTypes.DATE,
+    },
+    updated_at: {
+      type: DataTypes.DATE,
+    },
   },
+  {
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
+    freezeTableName: false,
+  }
 );
 
 export default User;
