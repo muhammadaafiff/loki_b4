@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Halaman List RPS</title>
+    <title>akun Admin</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -44,24 +44,23 @@
                 <div class="sidebar-brand-text mx-1">UNIVERSITAS ANDALAS</div>
                 
             </a>
-                <div class="sidebar-brand text-center">
-                    <u>ADMIN</u><br/>
-                </div>
-
+            <div class="sidebar-brand text-center">
+                <p>Admin</p><br/>
+            </div>
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="listrpsadmin.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Halaman List RPS</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item ">
+            <li class="nav-item active">
                 <a class="nav-link" href="akunadmin.html">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-user"></i>
                     <span>Akun</span></a>
             </li>
 
@@ -75,12 +74,12 @@
 
             <!-- Nav Item - logout -->
             <li class="nav-item my-5">
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                    <i class="fas fa-fw fa-sign-out-alt"></i>
-                    <span>Logout</span></a>
-                </a>
-            </li>
-          </ul>
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-fw fa-sign-out-alt"></i>
+                  <span>Logout</span></a>
+              </a>
+          </li>
+        </ul>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -90,7 +89,10 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-5 static-top shadow">
+                  <div class="">
+                    <h6 class="font-weight-bold text-primary">Admin</h6>
+                  </div>
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <form class="form-inline">
@@ -99,54 +101,13 @@
                         </button>
                     </form>
 
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-
-                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                        <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>
-
-                        <div class="topbar-divider d-none d-sm-block"></div>
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Thomas Akram Ferdinan</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
@@ -155,7 +116,7 @@
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="akunadmin.html">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-"></i>
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                     
                                 </a>
@@ -172,54 +133,97 @@
                 </nav>
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-                    <container class="container-fluid">
-                        <h1>List RPS</h1>
-                    </container>
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>Mata Kuliah</th>
-                                    <th>Kode </th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Pemrograman Web</td>
-                                    <td>JSI 616</td>
-                                    <td>
-                                        <a button class="btn btn-primary" type="button" href="printrpsadmin.html">Print </a>                                        
-                                        <a button class="btn btn-primary" type="button" href="laporan.html">Laporan</a>
-                                        <a button class="btn btn-primary" type="button" href="pengelolaandosen.html">Dosen</a>
-                                        
-                                    </td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>Perancangan Basis Data</td>
-                                    <td>JSI 323</td>
-                                    <td>
-                                        <a button class="btn btn-primary" type="button" href="printrpsadmin.html">Print </a>                                        
-                                        <a button class="btn btn-primary" type="button" href="laporan.html">Laporan</a>
-                                        <a button class="btn btn-primary" type="button" href="pengelolaandosen.html">Dosen</a>
-                                </tr>
+                <!-- Begin Page Content --><div>
+     
+        </div>
+
+        <div class="row">
+            <div class="col-12" style="margin-top:70px">
+                <div class="card2 mb-4" style="border-radius: 10px;">
+                    <div class="card-body" style="box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);border-radius: 10px;">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <nav aria-label="breadcrumb" style="margin-top:15px;">
+                                    <ol class="breadcrumb">
+                                    <li class="me-3">
+                                        <p style="margin-top: 5px ;width: 75px;">Dosen</p>
+                                    </li>
+                                    <li class="me-3" aria-current="page">
+                                        <div class="form-group" style="margin-bottom:20px">
+                                            <select style="padding:5px 10px; width:100%;" class="chosen-select" name="" required>
+                                            <option value="">Silahkan pilih dosen</option>;
+                                            <option value="B001">Husnil Kamil, M.T</option>;
+                                            <option value="B002">Ricky AKbar, M.Kom</option>;
+                                            <option value="B003">Adi Arga Arifnur, M.Kom</option>;
+                                            <option value="B004">Jefril Rahmadoni, M.Kom</option>;
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="me-3" aria-current="page">
+                                        <a class="btn btn-list" align="left" style=" color: rgb(255, 255, 255); background-color:#0080ff; border:#0080ff 2px solid;" href="tambahContributor.html">Tambah</a>
+                                    </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <br>
+                            <table id="myTable" class="table table-bordered table-hover" >
+                                <thead >
+                                    <tr align="center" bgcolor='C4C4C4'>
+                                        <th>No</th>
+                                        <th>Nama Dosen</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr align="center" style="color:#353535; font-weight:100; width:100%;">
+                                        <th>1</th>
+                                        <th>Husnil Kamil, M.T</th>
+                                        <th width="280px">
+                                            <a class='btn btn-danger' onclick="return confirm('Anda yakin menghapus data ini ?')" href="" style="background-color: white; color:#353535; border:#353535 1px solid;">Delete</a>
+                                        </th>
+                                    </tr>
+                                    <tr align="center" style="color:#353535; font-weight:100; width:100%;">
+                                        <th>2</th>
+                                        <th>Ricky Akbar, M.Kom</th>
+                                        <th width="280px">
+                                            <a class='btn btn-danger' onclick="return confirm('Anda yakin menghapus data ini ?')" href="" style="background-color: white; color:#353535; border:#353535 1px solid;">Delete</a>
+                                        </th>
+                                    </tr>
+                                    <tr align="center" style="color:#353535; font-weight:100; width:100%;">
+                                        <th>3</th>
+                                        <th>Adi Arga Arifnur, M.Kom</th>
+                                        <th width="280px">
+                                            <a class='btn btn-danger' onclick="return confirm('Anda yakin menghapus data ini ?')" href="" style="background-color: white; color:#353535; border:#353535 1px solid;">Delete</a>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="col-12">
+                                <a class="btn btn-list mt-2" align="left" style=" color: white; background-color:#353535; border:#353535 2px solid;" href="daftarRPSAdmin.html">Back</a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+</div>
+                <div class="container-fluid">
+
 
         </div>
+        
         <!-- End of Content Wrapper -->
-
-    </div>
+  
+        
+    
     <!-- End of Page Wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-      <!-- Logout Modal-->
+    <!-- isi -->
+    
+              
+    <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
