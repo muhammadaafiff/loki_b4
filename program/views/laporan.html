@@ -82,8 +82,7 @@
         </ul>
         <!-- End of Sidebar -->
 
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
+
 
             <!-- Main Content -->
             <div id="content">
@@ -189,9 +188,80 @@
                     </div>
                 </div>
             </div>
+            <div class="home-content">
+                <div class="overview-boxes">
+                  <div class="right-side">
+                    <div class="box-topic">
+                      Metode RPS
+                      <div class="btn">
+                        <button onClick="window.print()" type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
+                          <i class="bi bi-printer"></i>
+                          Cetak
+                        </button>
+                      </div>
+                    </div>
+                    <div class="indicator">
+                      <span class="text">
+                          <p>Persentase Metode RPS yang digunakan : </p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+        
+                <div style="margin:0px 20px ;">
+                  <!--Kode Grafik metode RPS-->
+                  <div id="piechart">
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript">
+                      // Load google charts
+                      google.charts.load('current', {'packages':['corechart']});
+                      google.charts.setOnLoadCallback(drawChart);
+                      
+                      // Draw the chart and set the chart values
+                      function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                        ['Metode', 'Jumlah'],
+                        ['Presentasi Dosen dan Diskusi', 2],
+                        ['Project Based Learning', 10],
+                        ['Collaborative Learning', 3]
+                      ]);
+                      
+                        // Optional; add a title and set the width and height of the chart
+                        var options = {
+                          'title': 'RPS Pemrograman Web', 
+                          'titleTextStyle': {
+                            'fontSize': 22
+                          },
+                          'legendTextStyle': {
+                            'fontSize': 15
+                          },
+                          'pieSliceTextStyle': {
+                            'fontSize': 20
+                          },
+                          'width': 600, 
+                          'height': 400,
+                          'chartArea': {
+                            'width': '80%', 
+                            'height': '80%'
+                          }
+                        };
+                      
+                        // Display the chart inside the <div> element with id="piechart"
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                        chart.draw(data, options);
+                      }
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </section>
         </div>
 </div>
     </div>
+
+    
+
+
     <!-- End of Page Wrapper -->
 
     <!-- isi -->
