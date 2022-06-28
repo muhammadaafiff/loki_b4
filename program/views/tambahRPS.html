@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>RPS yang Diampu</title>
+    <title>Tambah RPS</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -154,196 +154,54 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <container class="container-fluid">
-                        <h1>PEMROGRAMAN WEB</h1>
-                        <h3>Komponen Penilaian</h3>
+                        <h1>Tambah RPS</h1>
                     </container>
                     <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <table class="table table-striped table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th>Komponen Penilaian</th>
-                                    <th>Persentase </th>
-                                    <th>Aksi</th>
+                                    <th scope="col">ID Mata Kuliah</th>
+                                    <th class="text-center"><input name="course_id" type="tambahrps" id="inputtambahrps" class="form-control"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Kode Mata Kuliah</th>
+                                    <th class="text-center"><input name="code" type="tambahrps" id="inputtambahrps" class="form-control"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Nama Mata Kuliah</th>
+                                    <th class="text-center"><input name="name" type="tambahrps" id="inputtambahrps" class="form-control"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Nama Alias Mata Kuliah</th>
+                                    <th class="text-center"><input name="alias_name" type="tambahrps" id="inputtambahrps" class="form-control"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Jumlah SKS</th>
+                                    <th class="text-center"><input name="credit" type="tambahrps" id="inputtambahrps" class="form-control"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Semester</th>
+                                    <th class="text-center"><input name="semester" type="tambahrps" id="inputtambahrps" class="form-control"></th>
+                                </tr>  
+                                <tr>
+                                    <th scope="col">Deskripsi</th>
+                                    <th>
+                                        <div>
+                                            <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                                    </th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Kehadiran</td>
-                                    <td>10</td>
-                                    <td>
-                                        <a button class="btn btn-secondary" href="editkomponennilai.html" type="button">edit</a>
-                                        <button type="button" class="btn btn-secondary">delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Tugas</td>
-                                    <td>50</td>
-                                    <td>
-                                        <a button class="btn btn-secondary" href="editkomponennilai.html" type="button">edit</a>
-                                        <button type="button" class="btn btn-secondary">delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>UTS</td>
-                                    <td>15</td>
-                                    <td>
-                                        <a button class="btn btn-secondary" href="editkomponennilai.html" type="button">edit</a>
-                                        <button type="button" class="btn btn-secondary">delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Kuis</td>
-                                    <td>10</td>
-                                    <td>
-                                        <a button class="btn btn-secondary" href="editkomponennilai.html" type="button">edit</a>
-                                        <button type="button" class="btn btn-secondary">delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>UAS</td>
-                                    <td>15</td>
-                                    <td>
-                                        <a button class="btn btn-secondary" href="editkomponennilai.html" type="button">edit</a>
-                                        <button type="button" class="btn btn-secondary">delete</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div><a button class="btn btn-primary mt-4 mb-4" href="tambahkomponennilai.html" type="button">Tambah Komponen Penilaian</a></div>    
+                        </table><br>
+                            <button type="submit" class="btn btn-primary mb-3">Simpan</button>
+                            <a href="RPSdiampu.html" class="btn btn-secondary mb-3" type="button">Kembali</a>
+
                     </div>
 
                 </div>
-
-                <div class="container-fluid">
-                    <container class="container-fluid">
-                        <h3>Pertemuan Mingguan</h3>
-
-                    </container>
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>Pertemuan mingguan</th>
-                                    <th>Aksi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Minggu 1</td>
-                                    <td>
-                                        <a button class="btn btn-secondary" href="editpertemuan.html" type="button">edit</a>
-                                        <button type="button" class="btn btn-secondary">delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Minggu 2</td>
-                                    <td>
-                                        <a button class="btn btn-secondary" href="editpertemuan.html" type="button">edit</a>
-                                        <button type="button" class="btn btn-secondary">delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Minggu 3</td>
-                                    <td>
-                                        <a button class="btn btn-secondary" href="editpertemuan.html" type="button">edit</a>
-                                        <button type="button" class="btn btn-secondary">delete</button>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <div><a button class="btn btn-primary mt-4 mb-4" href="tambahpertemuan.html" type="button">Tambah Pertemuan Mingguan</a></div>    
-                    </div>
-                
-                </div>
-                
                 <!-- End of Content Wrapper -->
 
             </div>
-
-            <div class="container-fluid">
-                <container class="container-fluid">
-                    <h3>Referensi</h3>
-
-                </container>
-                <div class="table-responsive">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>REFERENSI</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Dasar PHP 5.3</td>
-                                <td>
-                                    <a button class="btn btn-secondary" href="editreferensi.html" type="button">edit</a>
-                                    <button type="button" class="btn btn-secondary">delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Eloquent JavaScript</td>
-                                <td>
-                                    <a button class="btn btn-secondary" href="editreferensi.html" type="button">edit</a>
-                                    <button type="button" class="btn btn-secondary">delete</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div><a button class="btn btn-primary mt-4 mb-4" href="tambahreferensi.html" type="button">Tambah Referensi</a></div>    
-                </div>
-
-            </div>
-            <!-- End of Content Wrapper -->
-
-            <div class="container-fluid">
-                <container class="container-fluid">
-                    <h3>CPMK</h3>
-
-                </container>
-                <div class="table-responsive">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>CPMK</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Mahasiswa mampu menjelaskan konsep dasar dan komponen aplikasi berbasis web (CP-1,CP-2)</td>
-                                <td>
-                                    <a button class="btn btn-secondary" href="editCPMK.html" type="button">edit</a>
-                                    <button type="button" class="btn btn-secondary">delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Mahasiswa mampu menggunakan salah satu teknologi stack untuk membangun aplikasi berbasis web (CP-1,CP-2)</td>
-                                <td>
-                                    <a button class="btn btn-secondary" href="editCPMK.html" type="button">edit</a>
-                                    <button type="button" class="btn btn-secondary">delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Mahasiswa mampu menerapkan keamanan untuk situs web (CP-2,CP-3)</td>
-                                <td>
-                                    <a button class="btn btn-secondary" href="editCPMK.html" type="button">edit</a>
-                                    <button type="button" class="btn btn-secondary">delete</button>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                    <div><a button class="btn btn-primary mt-4 mb-4" href="tambahCPMK.html" type="button">Tambah CPMK</a></div>    
-                </div>
-
-            </div>
-            <!-- End of Content Wrapper -->
-
-        </div>
-
-        </div>
             <!-- End of Page Wrapper -->
 
             <!-- Scroll to Top Button-->
@@ -354,7 +212,7 @@
             <!-- Logout Modal-->
             <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                    <div class="modal-content">s
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
