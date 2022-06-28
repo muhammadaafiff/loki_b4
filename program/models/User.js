@@ -1,48 +1,25 @@
-import { Sequelize } from "sequelize";
+'use strict'
+const { Sequelize, DataTypes, err } = require('sequelize');
+const db = require('../config/database.js')
 
-import db from "../config/database.js";
+var user = db.define('users', {
+    id : {
+        type            : DataTypes.BIGINT,
+        allowNull       : false,
+        primaryKey      : true,
+        autoIncrement   : true
+    },
+    name            : Sequelize.STRING,
+    email           : Sequelize.STRING,
+    password        : Sequelize.STRING,
+    remember_token  : Sequelize.STRING,
+    type            : Sequelize.ENUM('M', 'D', 'T'),
+    // created_at :Sequelize.DATE,
+    // updated_at : Sequelize.DATE
+},{
+    freezeTableName : true,
+    timestamps      : false
+})
 
-const { DataTypes } = Sequelize;
-
-const User = db.define(
-  "users",
-  {
-    id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: true,
-      primaryKey: true,
-    },
-    name: {
-      type: DataTypes.STRING,
-    },
-    email: {
-      type: DataTypes.STRING,
-    },
-    email_verified_at: {
-      type: DataTypes.DATE,
-      allowNull: true,
-    },
-    password: {
-      type: DataTypes.STRING,
-    },
-    remember_token: {
-      type: DataTypes.STRING,
-    },
-    type: {
-      type: DataTypes.STRING,
-    },
-    created_at: {
-      type: DataTypes.DATE,
-    },
-    updated_at: {
-      type: DataTypes.DATE,
-    },
-  },
-  {
-    createdAt: 'created_at',
-    updatedAt: 'updated_at',
-    freezeTableName: false,
-  }
-);
-
-export default User;
+// user.removeAttribute('updatedAt', 'createdAt')
+module.exports = user
