@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>akun Admin</title>
+    <title>Peta CPMK-CPL</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -34,7 +34,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center my-3" href="listrpsadmin.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center my-3" href="adminlistrps.html">
                 <div class="sidebar-brand-img">
                     <p>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Unand.svg/1200px-Logo_Unand.svg.png" width="60" lenght ="50"/>
@@ -52,7 +52,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="listrpsadmin.html">
+                <a class="nav-link" href="adminlistrps.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Halaman List RPS</span></a>
             </li>
@@ -90,7 +90,7 @@
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-5 static-top shadow">
                   <div class="">
-                    <h6 class="font-weight-bold text-primary">Laporan</h6>
+                    <h6 class="font-weight-bold text-primary">Persentase RPS</h6>
                   </div>
 
                     <!-- Sidebar Toggle (Topbar) -->
@@ -182,84 +182,14 @@
                             
                         </table>
                         <div class="col-12">
-                            <a class="btn btn-list mt-4" align="left" style=" color: white; background-color:#353535; border:#353535 2px solid;" href="listrpsadmin.html">Back</a>
+                            <a class="btn btn-list mt-4" align="left" style=" color: white; background-color:#353535; border:#353535 2px solid;" href="adminlistrps.html">Back</a>
                             <a class="btn btn-list mt-4" align="right" style="margin-left:30px; color: white; background-color:#353535; border:#353535 2px solid;" href="">Cetak</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="home-content">
-                <div class="overview-boxes">
-                  <div class="right-side">
-                    <div class="box-topic">
-                      Metode RPS
-                      <div class="btn">
-                        <button onClick="window.print()" type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
-                          <i class="bi bi-printer"></i>
-                          Cetak
-                        </button>
-                      </div>
-                    </div>
-                    <div class="indicator">
-                      <span class="text">
-                          <p>Persentase Metode RPS yang digunakan : </p>
-                      </span>
-                    </div>
-                  </div>
-                </div>
+   
         
-                <div style="margin:0px 20px ;">
-                  <!--Kode Grafik metode RPS-->
-                  <div id="piechart">
-                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                    <script type="text/javascript">
-                      // Load google charts
-                      google.charts.load('current', {'packages':['corechart']});
-                      google.charts.setOnLoadCallback(drawChart);
-                      
-                      // Draw the chart and set the chart values
-                      function drawChart() {
-                        var data = google.visualization.arrayToDataTable([
-                        ['Metode', 'Jumlah'],
-                        ['Presentasi Dosen dan Diskusi', 2],
-                        ['Project Based Learning', 10],
-                        ['Collaborative Learning', 3]
-                      ]);
-                      
-                        // Optional; add a title and set the width and height of the chart
-                        var options = {
-                          'title': 'RPS Pemrograman Web', 
-                          'titleTextStyle': {
-                            'fontSize': 22
-                          },
-                          'legendTextStyle': {
-                            'fontSize': 15
-                          },
-                          'pieSliceTextStyle': {
-                            'fontSize': 20
-                          },
-                          'width': 600, 
-                          'height': 400,
-                          'chartArea': {
-                            'width': '80%', 
-                            'height': '80%'
-                          }
-                        };
-                      
-                        // Display the chart inside the <div> element with id="piechart"
-                        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-                        chart.draw(data, options);
-                      }
-                    </script>
-                  </div>
-                </div>
-              </div>
-            </section>
-        </div>
-</div>
-    </div>
-
-    
 
 
     <!-- End of Page Wrapper -->
