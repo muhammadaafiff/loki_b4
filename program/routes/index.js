@@ -1,6 +1,7 @@
 // var express = require('express');
 // var router = express.Router();
 const test=require ("./test.js")
+const admin=require ("./admin.js")
 
 /* GET home page. */
 // router.get('/', function(req, res, next) {
@@ -10,6 +11,7 @@ const test=require ("./test.js")
 const router = {}
 
 router.test=test
+router.admin=admin
 
 module.exports = router;
 
