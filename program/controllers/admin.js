@@ -25,4 +25,8 @@ controllers.adminDosen = async (req,res)=>{
     res.render("adminDosen")
 }
 
+controllers.adminLaporan = async (req,res)=>{
+    res.render("adminLaporan")
+}
+
 module.exports = controllers 

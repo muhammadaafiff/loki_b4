@@ -31,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/loginAdmin', controllers.auth.loginAdmin)
 app.use('/', router.test)
 app.use('/', router.admin)
+app.use('/', router.dosen)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
