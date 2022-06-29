@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Halaman List RPS</title>
+    <title>Detail RPS</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -34,10 +34,10 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center my-3" href="adminlistrps.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center my-3" href="dashborddosen.html">
                 <div class="sidebar-brand-img">
                     <p>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Unand.svg/1200px-Logo_Unand.svg.png" width="60" lenght ="50"/>
+                        <img src="unand.png" width="60" lenght ="50"/>
                       </p>
                     
                 </div>
@@ -45,7 +45,7 @@
                 
             </a>
                 <div class="sidebar-brand text-center">
-                    <u>ADMIN</u><br/>
+                    <u>DOSEN</u><br/>
                 </div>
 
             <!-- Divider -->
@@ -53,14 +53,14 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="adminlistrps.html">
+                <a class="nav-link" href="dashborddosen.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Halaman List RPS</span></a>
+                    <span>Dashboard</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="adminakun.html">
+            <li class="nav-item ">
+                <a class="nav-link" href="akundosen.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Akun</span></a>
             </li>
@@ -73,14 +73,7 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
-            <!-- Nav Item - logout -->
-            <li class="nav-item my-5">
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                    <i class="fas fa-fw fa-sign-out-alt"></i>
-                    <span>Logout</span></a>
-                </a>
-            </li>
-          </ul>
+        </ul>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -146,17 +139,16 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Thomas Akram Ferdinan</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Husnil Kamil MT</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="akunadmin.html">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-"></i>
-                                    Profile
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Husnil Kamil MT
                                     
                                 </a>
                                 <div class="dropdown-divider"></div>
@@ -175,7 +167,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <container class="container-fluid">
-                        <h1>List RPS</h1>
+                        <h1>RPS</h1>
                     </container>
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -183,29 +175,19 @@
                                 <tr>
                                     <th>Mata Kuliah</th>
                                     <th>Kode </th>
-                                    <th>Action</th>
+                                    <th>RPS</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Pemrograman Web</td>
                                     <td>JSI 616</td>
-                                    <td>
-                                        <a button class="btn btn-primary" type="button" href="adminprintrps.html">Print </a>                                        
-                                        <a button class="btn btn-primary" type="button" href="adminpersentase.html">Persentase</a>
-                                        <a button class="btn btn-primary" type="button" href="/adminDosen">Dosen</a>
-                                        <a button class="btn btn-primary" type="button" href="/adminPeta">Peta CPMK-CPL</a>     
-                                    </td>
-                                    
+                                    <td><button type="button" class="btn btn-link" >RPS</button></td>
                                 </tr>
                                 <tr>
-                                    <td>Perancangan Basis Data</td>
+                                    <td>Pemrograman Basis Data</td>
                                     <td>JSI 323</td>
-                                    <td>
-                                        <a button class="btn btn-primary" type="button" href="adminprintrps.html">Print </a>                                        
-                                        <a button class="btn btn-primary" type="button" href="adminpersentase.html">Persentase</a>
-                                        <a button class="btn btn-primary" type="button" href="/adminDosen">Dosen</a>
-                                        <a button class="btn btn-primary" type="button" href="/adminPeta">Peta CPMK-CPL</a>
+                                    <td><button type="button" class="btn btn-link">RPS</button></td>
                                 </tr>
                 </div>
 
@@ -220,7 +202,7 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-      <!-- Logout Modal-->
+    <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -234,7 +216,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="/program/views/loginPage.ejs">Logout</a>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
                 </div>
             </div>
         </div>
