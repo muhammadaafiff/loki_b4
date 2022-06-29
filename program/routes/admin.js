@@ -2,12 +2,19 @@ const express = require('express')
 const router = express.Router()
 const controllers = require('../controllers/index.js')
 const cekLogin = require('../middleware/cekLogin.js')
-const cekAdmin = require('../middleware/cekAdmin.js')
 
-server.get('/admin', (req, res) => {
-    res.render("loginAdmin")
+router.get('/admin', (req, res) => {
+    res.render("landingPage")
 })
-server.post('/loginAdmin', controllers.auth.loginAdmin)
-server.get('/adminlistrps', cekLogin, controllers.admin.home)
+
+router.get('/landingPage', controllers.auth.landingPage)
+router.get('/loginPage', controllers.auth.loginPage)
+router.get('/adminPeta', controllers.auth.adminPeta)
+router.get('/adminDosen', controllers.auth.adminDosen)
+router.get('/adminlistrps',  controllers.admin.admin)
+
+// router.get('/adminlistrps', controllers.admin.home)
+// router.get('/adminpengelolaandosen/:id/:name',  controllers.admin.adminpengelolaandosen)
+
 
 module.exports = router
