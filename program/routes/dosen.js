@@ -8,5 +8,13 @@ router.get('/loginDosen', (req, res) => {
 })
 
 router.get('/loginDosen', controllers.auth.loginDosen)
+router.get('/RPSdiampu', controllers.auth.RPSdiampu)
+router.get('/DetailRPSdiampu', controllers.auth.DetailRPSdiampu)
+router.get('/tambahRPS', controllers.auth.tambahRPS)
+router.get('/tambahkomponennilai', controllers.dosen.tambahkomponennilai)
+router.get('/tambahpertemuan', controllers.dosen.tambahpertemuan)
+router.get('/tambahreferensi', controllers.dosen.tambahreferensi)
+router.get('/tambahCPMK', controllers.dosen.tambahCPMK)
+
 
 module.exports = router
