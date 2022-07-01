@@ -1,7 +1,7 @@
-const test = require('./test')
+const test = require('./test.js')
 const dosen = require('./dosen.js')
 const admin = require('./admin.js')
-const mahasiswa = require('./mahasiswa')
+const mahasiswa = require('./mahasiswa.js')
 
 const server = {}
 

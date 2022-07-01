@@ -8,13 +8,13 @@ const controllers = require('../controllers/index.js')
 // })
 
 router.get('/loginDosen', controllers.auth.loginDosen)
-router.get('/RPSdiampu', controllers.auth.RPSdiampu)
-router.get('/DetailRPSdiampu', controllers.auth.DetailRPSdiampu)
-router.get('/tambahRPS', controllers.auth.tambahRPS)
-router.get('/tambahkomponennilai', controllers.dosen.tambahkomponennilai)
-router.get('/tambahpertemuan', controllers.dosen.tambahpertemuan)
-router.get('/tambahreferensi', controllers.dosen.tambahreferensi)
-router.get('/tambahCPMK', controllers.dosen.tambahCPMK)
+router.get('/dosenMatkulDiampu', controllers.dosen.dosenMatkulDiampu)
+router.get('/dosenDetailRPSdiampu', controllers.dosen.dosenDetailRPSdiampu)
+router.get('/dosenEditKomponenNilai', controllers.dosen.dosenEditKomponenNilai)
+router.get('/dosenEditPertemuan', controllers.dosen.dosenEditPertemuan)
+// router.get('/tambahpertemuan', controllers.dosen.tambahpertemuan)
+// router.get('/tambahreferensi', controllers.dosen.tambahreferensi)
+// router.get('/tambahCPMK', controllers.dosen.tambahCPMK)
 
 
 module.exports = router

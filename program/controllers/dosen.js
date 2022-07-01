@@ -1,27 +1,38 @@
 const controllers = {}
 
+//login sebagai dosen
 controllers.loginDosen = async (req,res)=>{
     res.render("loginDosen")
 }
 
-controllers.RPSdiampu = async (req,res)=>{
-    res.render("RPSdiampu")
+controllers.dosenMatkulDiampu = async(req,res)=>{
+    res.render("dosenMatkulDiampu")
 }
 
-controllers.DetailRPSdiampu = async (req,res)=>{
-    res.render("DetailRPSdiampu")
+//menampilkan detail RPS yang diampu dosen
+controllers.dosenDetailRPSdiampu = async (req,res)=>{
+    res.render("dosenDetailRPSdiampu")
 }
 
 controllers.tambahRPS = async (req,res)=>{
     res.render("tambahRPS")
 }
 
-controllers.tambahkomponennilai = async (req,res)=>{
-    res.render("tambahkomponennilai")
+
+controllers.dosenEditKomponenNilai = async (req,res)=>{
+    res.render("dosenEditKomponenNilai")
 }
 
-controllers.tambahpertemuan = async (req,res)=>{
-    res.render("tambahpertemuan")
+// controllers.dosenTambahKomponenNilai = async (req,res)=>{
+//     res.render("dosenTambahKomponenNilai")
+// }
+
+// controllers.tambahpertemuan = async (req,res)=>{
+//     res.render("tambahpertemuan")
+// }
+
+controllers.dosenEditPertemuan = async (req,res)=>{
+    res.render("dosenEditPertemuan")
 }
 
 controllers.tambahreferensi = async (req,res)=>{
