@@ -1,12 +1,13 @@
-const test=require ("./test.js")
-const admin=require ("./admin.js")
-const dosen=require ("./dosen.js")
+const test = require('./test')
+const dosen = require('./dosen.js')
+const admin = require('./admin.js')
+const mahasiswa = require('./mahasiswa')
 
-const router = {}
+const server = {}
 
-router.test=test
-router.admin=admin
-router.dosen=dosen
+server.test = test
+server.dosen = dosen
+server.admin = admin
+server.mahasiswa = mahasiswa
 
-module.exports = router;
-
+module.exports = server

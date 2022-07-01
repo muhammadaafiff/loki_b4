@@ -1,4 +1,5 @@
-
+// const { Model } = require("sequelize/types")
+const models = require('../models/index.js')
 const controllers = {}
 
 controllers.loginAdmin = async (req, res) => {
@@ -6,6 +7,9 @@ controllers.loginAdmin = async (req, res) => {
 }
 
 controllers.landingPage = async (req, res) => {
+    const rps = await models.course_plans.findAll({
+        
+    })
     res.render("landingPage")
 }
 
@@ -44,5 +48,10 @@ controllers.DetailRPSdiampu = async (req,res)=>{
 controllers.tambahRPS = async (req,res)=>{
     res.render("tambahRPS")
 }
+
+// controllers.mahasiswaDetailRPS = async (req, res) => {
+//     res.render("mahasiswaDetailRPS")
+// }
+
 
 module.exports = controllers

@@ -1,5 +1,7 @@
 const controllers = {}
 
-controllers.rpsPemrogramanWeb = async (req, res) => {
-    res.render("rpsPemrogramanWeb")
+controllers.mahasiswaDetailRPS = async (req, res) => {
+    res.render("mahasiswaDetailRPS")
 }
+
+module.exports = controllers 

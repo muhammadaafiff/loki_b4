@@ -1,11 +1,11 @@
 const express = require('express')
 const router = express.Router()
 const controllers = require('../controllers/index.js')
-const cekLogin = require('../middleware/cekLogin.js')
+// const cekLogin = require('../cekLogin.js')
 
-router.get('/loginDosen', (req, res) => {
-    res.render("loginDosen")
-})
+// router.get('/loginDosen', (req, res) => {
+//     res.render("loginDosen")
+// })
 
 router.get('/loginDosen', controllers.auth.loginDosen)
 router.get('/RPSdiampu', controllers.auth.RPSdiampu)
