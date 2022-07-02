@@ -13,7 +13,9 @@ router.get('/dosenDetailRPSdiampu', controllers.dosen.dosenDetailRPSdiampu)
 router.get('/dosenEditKomponenNilai', controllers.dosen.dosenEditKomponenNilai)
 router.get('/dosenEditPertemuan', controllers.dosen.dosenEditPertemuan)
 // router.get('/tambahpertemuan', controllers.dosen.tambahpertemuan)
+router.get('/dosenEditReferensi', controllers.dosen.dosenEditReferensi)
 // router.get('/tambahreferensi', controllers.dosen.tambahreferensi)
+router.get('/dosenEditCPMK',controllers.dosen.dosenEditCPMK)
 // router.get('/tambahCPMK', controllers.dosen.tambahCPMK)
 
 

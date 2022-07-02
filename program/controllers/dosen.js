@@ -35,8 +35,16 @@ controllers.dosenEditPertemuan = async (req,res)=>{
     res.render("dosenEditPertemuan")
 }
 
+controllers.dosenEditReferensi = async (req,res) =>{
+    res.render('dosenEditReferensi')
+}
+
 controllers.tambahreferensi = async (req,res)=>{
     res.render("tambahreferensi")
+}
+
+controllers.dosenEditCPMK = async (req,res) =>{
+    res.render('dosenEditCPMK')
 }
 
 controllers.tambahCPMK= async (req,res)=>{
