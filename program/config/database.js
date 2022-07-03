@@ -1,7 +1,6 @@
 const Sequelize = require('sequelize');
 
-const db = new Sequelize('lokii', 'root', '', {
-    host: 'localhost',
+const db = new Sequelize('loki', 'root', '', {
     dialect: 'mysql'
 })
 
