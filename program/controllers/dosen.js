@@ -14,22 +14,21 @@ controllers.dosenDetailRPSdiampu = async (req,res)=>{
     res.render("dosenDetailRPSdiampu")
 }
 
-controllers.tambahRPS = async (req,res)=>{
-    res.render("tambahRPS")
+controllers.dosenTambahRPS = async (req,res)=>{
+    res.render("dosenTambahRPS")
 }
-
 
 controllers.dosenEditKomponenNilai = async (req,res)=>{
     res.render("dosenEditKomponenNilai")
 }
 
-// controllers.dosenTambahKomponenNilai = async (req,res)=>{
-//     res.render("dosenTambahKomponenNilai")
-// }
+controllers.dosenTambahKomponenNilai = async (req,res)=>{
+    res.render("dosenTambahKomponenNilai")
+}
 
-// controllers.tambahpertemuan = async (req,res)=>{
-//     res.render("tambahpertemuan")
-// }
+controllers.dosenTambahPertemuan = async (req,res)=>{
+    res.render("dosenTambahPertemuan")
+}
 
 controllers.dosenEditPertemuan = async (req,res)=>{
     res.render("dosenEditPertemuan")
@@ -39,16 +38,16 @@ controllers.dosenEditReferensi = async (req,res) =>{
     res.render('dosenEditReferensi')
 }
 
-controllers.tambahreferensi = async (req,res)=>{
-    res.render("tambahreferensi")
+controllers.dosenTambahReferensi = async (req,res)=>{
+    res.render("dosenTambahReferensi")
 }
 
 controllers.dosenEditCPMK = async (req,res) =>{
     res.render('dosenEditCPMK')
 }
 
-controllers.tambahCPMK= async (req,res)=>{
-    res.render("tambahCPMK")
+controllers.dosenTambahCPMK= async (req,res)=>{
+    res.render("dosenTambahCPMK")
 }
 
 module.exports = controllers 
