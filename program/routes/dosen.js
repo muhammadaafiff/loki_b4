@@ -12,11 +12,12 @@ router.get('/dosenMatkulDiampu', controllers.dosen.dosenMatkulDiampu)
 router.get('/dosenDetailRPSdiampu', controllers.dosen.dosenDetailRPSdiampu)
 router.get('/dosenEditKomponenNilai', controllers.dosen.dosenEditKomponenNilai)
 router.get('/dosenEditPertemuan', controllers.dosen.dosenEditPertemuan)
-// router.get('/tambahpertemuan', controllers.dosen.tambahpertemuan)
+router.get('/dosenTambahKomponenNilai', controllers.dosen.dosenTambahKomponenNilai)
+router.get('/dosenTambahPertemuan', controllers.dosen.dosenTambahPertemuan)
 router.get('/dosenEditReferensi', controllers.dosen.dosenEditReferensi)
-// router.get('/tambahreferensi', controllers.dosen.tambahreferensi)
+router.get('/dosenTambahReferensi', controllers.dosen.dosenTambahReferensi)
 router.get('/dosenEditCPMK',controllers.dosen.dosenEditCPMK)
-// router.get('/tambahCPMK', controllers.dosen.tambahCPMK)
+router.get('/dosenTambahCPMK', controllers.dosen.dosenTambahCPMK)
 
 
 module.exports = router
