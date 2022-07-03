@@ -1,27 +1,27 @@
 const controllers = {}
-const models = require('../models/index.js')
+// const models = require('../models/index.js')
 
 
 controllers.admin = async (req,res)=>{
     res.render("adminlistrps")
 }
 
-//admin membuat laporan peta CPMK
+controllers.adminForm = async (req,res)=>{
+    res.render("adminForm")
+}
+
 controllers.adminPeta = async (req,res)=>{
     res.render("adminPeta")
 }
 
-// admin menambahkan dosen
 controllers.adminDosen = async (req,res)=>{
     res.render("adminDosen")
 }
 
-//admin membuat laporan
 controllers.adminLaporan = async (req,res)=>{
     res.render("adminLaporan")
 }
 
-//admin membuat laporan persentase
 controllers.adminPersentase = async(req,res)=>{
     res.render("adminPersentase")
 }

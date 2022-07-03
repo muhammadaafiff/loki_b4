@@ -7,7 +7,7 @@ const controllers = require('../controllers/index.js')
 //     res.render("loginDosen")
 // })
 
-router.get('/loginDosen', controllers.auth.loginDosen)
+router.get('/dosenForm', controllers.dosen.dosenForm)
 router.get('/dosenMatkulDiampu', controllers.dosen.dosenMatkulDiampu)
 router.get('/dosenDetailRPSdiampu', controllers.dosen.dosenDetailRPSdiampu)
 router.get('/dosenEditKomponenNilai', controllers.dosen.dosenEditKomponenNilai)

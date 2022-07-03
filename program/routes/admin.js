@@ -5,7 +5,7 @@ const controllers = require('../controllers/index.js')
 
 
 router.get('/', controllers.auth.landingPage)
-router.get('/loginPage', controllers.auth.loginPage)
+router.get('/adminForm', controllers.admin.adminForm)
 router.get('/adminPeta', controllers.admin.adminPeta)
 router.get('/adminPersentase', controllers.admin.adminPersentase)
 router.get('/adminCetakPersentase', controllers.admin.adminCetakPersentase)
