@@ -3,9 +3,6 @@ const router = express.Router()
 const controllers = require('../controllers/index.js')
 // const cekLogin = require('../cekLogin.js')
 
-router.get('/admin', (req, res) => {
-    res.render("landingPage")
-})
 
 router.get('/', controllers.auth.landingPage)
 router.get('/loginPage', controllers.auth.loginPage)

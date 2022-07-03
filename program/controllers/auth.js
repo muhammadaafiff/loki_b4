@@ -7,17 +7,20 @@ controllers.loginAdmin = async (req, res) => {
 }
 
 controllers.landingPage = async (req, res) => {
-    const rps = await models.course_plans.findAll({
-        
-    })
-    res.render("landingPage")
+    try {
+        const rps = await models.course_plans.findAll()
+        // res.send(rps)
+        res.render("landingPage", {rps})
+    } catch (error) {
+        console.log(error)
+    }
 }
 
 controllers.loginPage = async (req, res) => {
     res.render("loginPage")
 }
 
-controllers.loginDosen = async (req,res)=>{
+controllers.loginDosen = async (req, res) => {
     res.render("loginDosen")
 }
 

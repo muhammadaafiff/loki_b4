@@ -1,10 +1,6 @@
 const controllers = {}
 const models = require('../models/index.js')
 
-controllers.landingPage = async (req,res)=>{
-    const RPS =await models.course_plans.findAll({})
-    res.render("landingPage")
-}
 
 controllers.admin = async (req,res)=>{
     res.render("adminlistrps")

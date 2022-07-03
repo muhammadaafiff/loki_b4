@@ -40,7 +40,34 @@
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>Mata Kuliah</th>
+                <th scope="col">No</th>
+                <th scope="col">Kode Matkul</th>
+                <th scope="col">Mata Kuliah</th>
+                <th scope="col">Semester</th>
+                <th scope="col">SKS</th>
+                <th scope="col" class="no-print">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% rps.forEach((R,i)=>{ %>
+              <tr>
+                <th scope="row"> <%= i+1  %> </th>
+                <td> <%= R.code %>  </td>
+                <td> <%= R.name %> </td>
+                <td><%=R.semester%></td>
+                <td><%=R.credit%></td>
+                <td class="no-print">
+                  <a href="<%= `/mahasiswaDetailRPS` %>">
+                    <button style="margin-right: 5px;" type="button" class="btn btn-primary">
+                      <i class='bx bx-box' ></i>
+                      Detail
+                    </button>
+                  </a>
+                </td>
+              </tr>
+              <% }) %>
+            
+                                    <!-- <th>Mata Kuliah</th>
                                     <th>Kode </th>
                                     <th>RPS</th>
                                 </tr>
@@ -49,32 +76,9 @@
                                 <tr>
                                     <td>Pemrograman Web</td>
                                     <td>JSI 62125</td>
-                                    <td> <a type="button" class="btn btn-primary" href="/mahasiswaDetailRPS">RPS</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Perancangan Basis Data</td>
-                                    <td>JSI 62120</td>
-                                    <td> <a type="button" class="btn btn-primary" href="">RPS</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Big Data</td>
-                                    <td>JSI 62135</td>
-                                    <td> <a type="button" class="btn btn-primary" href="">RPS</a></td>
-                                </tr><tr>
-                                    <td>Interaksi Manusia dan Komputer</td>
-                                    <td>JSI 62107</td>
-                                    <td> <a type="button" class="btn btn-primary" href="">RPS</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Kalkulus</td>
-                                    <td>JSI 62111</td>
-                                    <td> <a type="button" class="btn btn-primary" href="">RPS</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Bahasa Inggris</td>
-                                    <td>JSI 62112</td>
-                                    <td> <a type="button" class="btn btn-primary" href="">RPS</a></td>
-                                </tr>                
+                                    <td> <a type="button" class="btn btn-primary" href="/mahasiswaDetailRPS">RPS</a></td> -->
+                                </tr>  
+                         
                 </div>
                 
 

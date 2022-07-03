@@ -109,136 +109,148 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <container class="container-fluid">
-                        <h1>PEMROGRAMAN WEB</h1>
-                        <h3>Deskripsi</h3>
-                        <h6>Pemrograman Web adalah Proses atau Cara untuk menjalankan intruksi pada sebuah komputer yang terhubung ke internet untuk membuat fungsi atau tugas tertentu. dan dalam menjalanan sebuah program di dalam web itu melaui web browser seperti : mozilla, Opera, Chrome, dll.</h6>
-                        <h6>SKS : 3</h6>
-                        <h6>Dosen Pengampu : Husnil Kamil MT</h6>
+        <h5>Nama Mata Kuliah: <%= course.name %></h5>
+          <h5>Kode Mata Kuliah: <%= course.code %></h5>
+          <h5>Dosen Pengampu: <% dosen.forEach((d,i)=>{ %>
+            <%= d.lecturer.name %>,
+          <%  }) %></h5>
+          <h5>Semester: <%=course.semester%></h5>
+          <h5>Bobot SKS: <%=course.credit%></h5>
+        </div>
+        &nbsp;
 
+        <div style="margin:0px 20px ;">
+          <h5>Deskripsi Mata Kuliah</h5>
+          <p>
+            <% if (course.description){ %>
+              <%=course.description%>.
+            <% }else { %>
+              Deskripsi Belum ada
+            <% } %>
+          </p>
+        </div>
+        &nbsp;
 
-                        <h3>Komponen Penilaian</h3>
-                    </container>
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>Komponen Penilaian</th>
-                                    <th>Persentase </th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Kehadiran</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Tugas</td>
-                                    <td>50</td>
-                                </tr>
-                                <tr>
-                                    <td>UTS</td>
-                                    <td>15</td>
-                                </tr>
-                                <tr>
-                                    <td>Kuis</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>UAS</td>
-                                    <td>15</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-                    </div>
+        <div style="margin:0px 20px ;">
+          <h5>Peta CPL ke CPMK</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">CP Program Studi</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% cpl.forEach((c,i)=>{%>
+              <tr>
+                <th scope="row"><%= c.code %></th>
+                <td><%= c.name %></td>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
 
-                </div>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">CP Mata Kuliah</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% cpmk.forEach((cp,a)=>{ %>
+              <tr>
+                <th scope="row"><%=a+1%></th>
+                <td><%= cp.name %>. 
+                  <!-- (
+                  <% cpl.forEach((c,i)=>{%>
+                    <%= cp.course_lo_details.curriculum_lo_id %>
+                  <% }) %>
+                ) -->
+              </td>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+        &nbsp;
 
-                <div class="container-fluid">
-                    <container class="container-fluid">
-                        <h3>Pertemuan Mingguan</h3>
+        <div style="margin:0px 20px ;">
+          <h5>Referensi Utama</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Referensi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% ref.forEach((r,i)=>{%>
+              <tr>
+                <th scope="row"><%=i+1%></th>
+                <td><%=r.author%>, <%=r.year%>, “<%=r.title%>”, <%=r.publisher%></td>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+        &nbsp;
 
-                    </container>
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>Pertemuan mingguan</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Minggu 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Minggu 2</td>
-                                </tr>
-                                <tr>
-                                    <td>Minggu 3</td>
-                                </tr>
+        <div style="margin:0px 20px ;">
+          <h5>Komponen Penilaian</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Penilaian</th>
+                <th scope="col">Bobot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% asses.forEach((a,i)=>{%>
+              <tr>
+                <th scope="row"><%=i+1%></th>
+                <td><%=a.name%></td>
+                <td><%=a.percentage%>%</td>
+              </tr>
+              <%})%>
+            </tbody>
+          </table>
+        </div>
+        &nbsp;
 
-                            </tbody>
-                        </table>
-                    </div>
+        <div style="margin:0px 20px ;">
+          <h5>Pertemuan Mingguan</h5>
+          <table class="table table-bordered">
+            <thead>
+              
+              <tr>
+                <th scope="col">Minggu ke-</th>
+                <th scope="col">Kemampuan akhir yang diharapkan</th>
+                <th scope="col">Bahan Kajian (Materi Ajar) dan Referensi</th>
+                <th scope="col">Metode Pembelajaran dan Alokasi Waktu</th>
+                <th scope="col">Pengalaman Belajar Mahasiswa</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+              <% weekMeet.forEach((w,i)=>{ %>
+              <tr>
+                <th scope="row"><%=i+1%></th>
+                <td>
+                  <%=cpmk[i].name%>
+                </td>
+                <td><%=w.material%></td>
+                <td><%=w.method%></td>
+                <td><%=w.student_experience%></td>
                 
-                </div>
-                
-                <!-- End of Content Wrapper -->
-
-            </div>
-
-            <div class="container-fluid">
-                <container class="container-fluid">
-                    <h3>Referensi</h3>
-
-                </container>
-                <div class="table-responsive">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>REFERENSI</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Dasar PHP 5.3</td>
-                            </tr>
-                            <tr>
-                                <td>Eloquent JavaScript</td>
-                            </tr>
-                        </tbody>
-                    </table> 
-                </div>
-
-            </div>
-            <!-- End of Content Wrapper -->
-
-            <div class="container-fluid">
-                <container class="container-fluid">
-                    <h3>CPMK</h3>
-
-                </container>
-                <div class="table-responsive">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>CPMK</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Mahasiswa mampu menjelaskan konsep dasar dan komponen aplikasi berbasis web (CP-1,CP-2)</td>
-                            </tr>
-                            <tr>
-                                <td>Mahasiswa mampu menggunakan salah satu teknologi stack untuk membangun aplikasi berbasis web (CP-1,CP-2)</td>
-                            </tr>
-                            <tr>
-                                <td>Mahasiswa mampu menerapkan keamanan untuk situs web (CP-2,CP-3)</td>
-                            </tr>
-
-                        </tbody>
-                    </table>  
-                </div>
-                <a type="button" class="btn btn-primary" href="/">Back</a>
-            </div>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
             <!-- End of Content Wrapper -->
 
         </div>
