@@ -29,7 +29,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/users', usersRouter);
 
 // app.get('/loginAdmin', controllers.auth.loginAdmin)
-app.use('/', router.test)
 app.use('/', router.admin)
 app.use('/', router.dosen)
 app.use('/', router.mahasiswa)

@@ -1,8 +1,8 @@
+const models = require('../models/index.js')
 const controllers = {}
 
-
-controllers.dosenForm = async (req, res) => {
-    res.render("dosenForm")
+controllers.dosenLogin = async (req, res) => {
+    res.render("dosenLogin")
 }
 
 controllers.dosenMatkulDiampu = async(req,res)=>{

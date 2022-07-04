@@ -1,13 +1,13 @@
+const models = require('../models/index.js')
 const controllers = {}
 // const models = require('../models/index.js')
 
-
-controllers.admin = async (req,res)=>{
-    res.render("adminlistrps")
+controllers.adminLogin = async (req,res)=>{
+    res.render("adminLogin")
 }
 
-controllers.adminForm = async (req,res)=>{
-    res.render("adminForm")
+controllers.adminlistrps = async (req,res)=>{
+    res.render("adminlistrps")
 }
 
 controllers.adminPeta = async (req,res)=>{
@@ -34,8 +34,13 @@ controllers.adminInfoMatkul = async(req,res)=>{
     res.render("adminInfoMatkul")
 }
 
-controllers.tambahRPS = async (req,res)=>{
-    res.render("tambahRPS")
+controllers.adminTambahMatkul = async(req,res)=>{
+    res.render("adminTambahMatkul")
+}
+
+
+controllers.adminTambahRPS = async (req,res)=>{
+    res.render("adminTambahRPS")
 }
 
 controllers.adminmatkuldosen = async (req,res)=>{
