@@ -1,15 +1,14 @@
+const models = require('../models/index.js')
 const controllers = {}
 
-//login sebagai dosen
-controllers.loginDosen = async (req,res)=>{
-    res.render("loginDosen")
+controllers.dosenLogin = async (req, res) => {
+    res.render("dosenLogin")
 }
 
 controllers.dosenMatkulDiampu = async(req,res)=>{
     res.render("dosenMatkulDiampu")
 }
 
-//menampilkan detail RPS yang diampu dosen
 controllers.dosenDetailRPSdiampu = async (req,res)=>{
     res.render("dosenDetailRPSdiampu")
 }
